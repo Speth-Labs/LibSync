@@ -25,8 +25,8 @@
     <link rel="stylesheet" href="{{ asset('css/branding.css') }}?v=20260801-2">
     <link rel="stylesheet" href="{{ asset('css/student-portal.css') }}?v=20260806-1">
     <link rel="stylesheet" href="{{ asset('css/dark-mode.css') }}?v=20260802-2">
-    <link rel="stylesheet" href="{{ asset('css/mobile-ux.css') }}?v=20260801-2">
-    <link rel="stylesheet" href="{{ asset('css/motion-performance.css') }}?v=20260806-1">
+    <link rel="stylesheet" href="{{ asset('css/mobile-ux.css') }}?v=20260810-1">
+    <link rel="stylesheet" href="{{ asset('css/motion-performance.css') }}?v=20260810-1">
     <link rel="stylesheet" href="{{ asset('css/action-center.css') }}?v=20260801-2">
     <link rel="stylesheet" href="{{ asset('css/circulation-dashboard.css') }}?v=20260802-3">
     <link rel="stylesheet" href="{{ asset('css/imports.css') }}?v=20260803-1">

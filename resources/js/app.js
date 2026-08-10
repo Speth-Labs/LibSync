@@ -206,6 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
         if (navigationLocked) return;
         navigationLocked = true;
+        if (link.closest('.mobile-tabbar')) link.classList.add('is-pressing');
         if (loader) loader.className = `page-loader page-loader--${loaderTypeFor(destination.pathname)}`;
         showLoader();
         window.setTimeout(() => window.location.assign(destination.href), 180);

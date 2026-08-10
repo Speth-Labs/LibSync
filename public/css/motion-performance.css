@@ -113,6 +113,43 @@ html { scroll-behavior: auto; }
     .loader-student__body i:last-child { min-height: 160px; }
 }
 
+@media (max-width: 760px) and (prefers-reduced-motion: no-preference) {
+    @keyframes mobileNavActiveIn {
+        0% { opacity: 0; transform: translate(-50%, 5px) scale(.55); }
+        70% { opacity: 1; transform: translate(-50%, -1px) scale(1.08); }
+        100% { opacity: 1; transform: translate(-50%, 0) scale(1); }
+    }
+
+    @keyframes mobileNavIconIn {
+        0% { transform: translateY(3px) scale(.76); opacity: .55; }
+        70% { transform: translateY(-1px) scale(1.08); opacity: 1; }
+        100% { transform: translateY(0) scale(1); opacity: 1; }
+    }
+
+    @keyframes mobileNavPress {
+        0% { transform: scale(1); }
+        45% { transform: scale(.93); }
+        100% { transform: scale(1); }
+    }
+
+    @keyframes mobileSidebarLinkPress {
+        0% { transform: translateX(0); }
+        45% { transform: translateX(4px); }
+        100% { transform: translateX(0); }
+    }
+
+    .mobile-tabbar .is-active::before { animation: mobileNavActiveIn .36s cubic-bezier(.22, 1, .36, 1) both !important; }
+    .mobile-tabbar .is-active > span { animation: mobileNavIconIn .36s cubic-bezier(.22, 1, .36, 1) both !important; }
+    .mobile-tabbar .is-pressing { animation: mobileNavPress .18s ease-out both !important; }
+    .layout__sidebar .sidebar__link.is-pressing { animation: mobileSidebarLinkPress .18s ease-out both !important; }
+}
+
+@media (max-width: 760px) {
+    .layout__sidebar { transition: transform .28s cubic-bezier(.22, 1, .36, 1) !important; }
+    .sidebar-overlay { transition: opacity .24s ease, visibility 0s linear .24s !important; }
+    .sidebar-overlay.is-open { transition-delay: 0s !important; }
+}
+
 @media (max-width: 380px) {
     .loader-student__stats { grid-template-columns: 1fr; }
     .loader-student__stats i:last-child { grid-column: auto; }
