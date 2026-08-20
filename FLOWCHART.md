@@ -3,7 +3,10 @@
 Dokumen ini menggambarkan alur utama project LibSync dari login sampai
 operasional perpustakaan dan pemasangan domain.
 
-![Flowchart LibSync detail](artifacts/flowchart-libsync-detailed.png)
+![Flowchart alur penggunaan LibSync](artifacts/flowchart-libsync-detailed.png)
+
+Gambar ini memakai simbol flowchart umum: oval untuk mulai/selesai, persegi
+panjang untuk proses, belah ketupat untuk keputusan, dan panah untuk arah alur.
 
 ## 1. Alur pengguna dan operasional
 
